@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatedSettingsView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-P4-HJE" customClass="LeftDetailSettingsSelectionView" customModule="AnimatedSettingsView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-MD-lDB" customClass="RightDetailSettingsSelectionView" customModule="AnimatedSettingsView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6mo-Zj-cKP"/>
+                            <constraint firstAttribute="trailing" secondItem="RQr-MD-lDB" secondAttribute="trailing" id="Gqn-w1-Ts4"/>
+                            <constraint firstAttribute="trailing" secondItem="DzP-P4-HJE" secondAttribute="trailing" id="Heg-ju-fAd"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="top" secondItem="DzP-P4-HJE" secondAttribute="bottom" id="TxU-Ok-2ip"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="height" secondItem="DzP-P4-HJE" secondAttribute="height" id="Udn-Zc-Ass"/>
+                            <constraint firstItem="DzP-P4-HJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bUx-zA-USH"/>
+                            <constraint firstItem="DzP-P4-HJE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xUK-n3-Vte"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RQr-MD-lDB" secondAttribute="bottom" id="zcD-sA-bDE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Heg-ju-fAd"/>
+                                <exclude reference="bUx-zA-USH"/>
+                                <exclude reference="xUK-n3-Vte"/>
+                                <exclude reference="6mo-Zj-cKP"/>
+                                <exclude reference="Gqn-w1-Ts4"/>
+                                <exclude reference="TxU-Ok-2ip"/>
+                                <exclude reference="Udn-Zc-Ass"/>
+                                <exclude reference="zcD-sA-bDE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Heg-ju-fAd"/>
+                                <include reference="bUx-zA-USH"/>
+                                <include reference="xUK-n3-Vte"/>
+                                <include reference="6mo-Zj-cKP"/>
+                                <include reference="Gqn-w1-Ts4"/>
+                                <include reference="TxU-Ok-2ip"/>
+                                <include reference="Udn-Zc-Ass"/>
+                                <include reference="zcD-sA-bDE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="settingsSelectionView1" destination="DzP-P4-HJE" id="FPD-y7-VjB"/>
+                        <outlet property="settingsSelectionView2" destination="RQr-MD-lDB" id="4vZ-Ou-k6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>

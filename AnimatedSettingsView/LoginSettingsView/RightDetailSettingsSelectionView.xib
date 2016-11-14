@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightDetailSettingsSelectionView" customModule="AnimatedSettingsView" customModuleProvider="target">
+            <connections>
+                <outlet property="settingsImageView" destination="Tc8-0X-yCP" id="vCt-IY-5af"/>
+                <outlet property="settingsLabel" destination="5C5-Wp-phz" id="YHi-3z-RCa"/>
+                <outlet property="settingsSubtitleLabel" destination="leX-iV-8KB" id="9B3-0b-vHw"/>
+                <outlet property="settingsSwitch" destination="W4c-PS-iEL" id="Vtx-5F-cbc"/>
+                <outlet property="view" destination="nWj-h2-Rhp" id="mQT-09-TL2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="nWj-h2-Rhp">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jw9-eu-5hR">
+                    <rect key="frame" x="0.0" y="241" width="375" height="105"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow background updates to keep data and backups permanently up-to-date. This option can lead to increased power consumption." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="leX-iV-8KB">
+                            <rect key="frame" x="30" y="41" width="315" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Activate Background Update" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5C5-Wp-phz">
+                            <rect key="frame" x="30" y="10" width="315" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ykj-89-m2E"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="5C5-Wp-phz" firstAttribute="leading" secondItem="Jw9-eu-5hR" secondAttribute="leading" constant="30" id="Hlo-32-TzW"/>
+                        <constraint firstItem="5C5-Wp-phz" firstAttribute="top" secondItem="Jw9-eu-5hR" secondAttribute="top" constant="10" id="Jb8-Xi-eVE"/>
+                        <constraint firstItem="leX-iV-8KB" firstAttribute="top" secondItem="5C5-Wp-phz" secondAttribute="bottom" constant="10" id="PYl-Mi-7Ay"/>
+                        <constraint firstItem="leX-iV-8KB" firstAttribute="leading" secondItem="Jw9-eu-5hR" secondAttribute="leading" constant="30" id="Q3l-V8-HtB"/>
+                        <constraint firstAttribute="trailing" secondItem="leX-iV-8KB" secondAttribute="trailing" constant="30" id="ire-uC-wJN"/>
+                        <constraint firstAttribute="trailing" secondItem="5C5-Wp-phz" secondAttribute="trailing" constant="30" id="kVm-I3-LD8"/>
+                        <constraint firstAttribute="bottom" secondItem="leX-iV-8KB" secondAttribute="bottom" constant="10" id="vaN-40-RIk"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-0X-yCP">
+                    <rect key="frame" x="50" y="346" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Chl-bw-3eS"/>
+                        <constraint firstAttribute="height" constant="60" id="ZAw-9j-fT4"/>
+                    </constraints>
+                </imageView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W4c-PS-iEL">
+                    <rect key="frame" x="276" y="360" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="cFh-ee-HYo"/>
+                        <constraint firstAttribute="width" constant="49" id="waT-7k-Tkz"/>
+                    </constraints>
+                    <color key="onTintColor" red="0.0" green="0.53649307589999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.64546877145767212" green="0.64546877145767212" blue="0.64546877145767212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="settingsSwitchValueChangedWithSender:" destination="-1" eventType="valueChanged" id="BTq-vA-ECV"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jw9-eu-5hR" firstAttribute="leading" secondItem="nWj-h2-Rhp" secondAttribute="leading" id="3zv-YK-mnl"/>
+                <constraint firstItem="Tc8-0X-yCP" firstAttribute="top" secondItem="Jw9-eu-5hR" secondAttribute="bottom" id="Dq7-KQ-hoX"/>
+                <constraint firstItem="Jw9-eu-5hR" firstAttribute="centerY" secondItem="nWj-h2-Rhp" secondAttribute="centerY" constant="-40" id="URU-X5-Z9R"/>
+                <constraint firstItem="W4c-PS-iEL" firstAttribute="centerY" secondItem="Tc8-0X-yCP" secondAttribute="centerY" id="VN0-0j-1AV"/>
+                <constraint firstAttribute="trailing" secondItem="W4c-PS-iEL" secondAttribute="trailing" constant="50" id="WmR-um-hdM"/>
+                <constraint firstItem="Tc8-0X-yCP" firstAttribute="leading" secondItem="nWj-h2-Rhp" secondAttribute="leading" constant="50" id="jcb-vE-PWW"/>
+                <constraint firstItem="Jw9-eu-5hR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nWj-h2-Rhp" secondAttribute="top" constant="8" id="obE-Qm-tVB"/>
+                <constraint firstAttribute="trailing" secondItem="Jw9-eu-5hR" secondAttribute="trailing" id="ssB-2E-gta"/>
+            </constraints>
+            <point key="canvasLocation" x="470" y="253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cloud" width="160" height="160"/>
+    </resources>
+</document>
