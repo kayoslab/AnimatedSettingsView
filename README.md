@@ -1,8 +1,9 @@
 # AnimatedSettingsView
 
-![AnimatedSettingsView iphone 7 Landscape](Ressources/gif/iPhone-7-Jet-Black-landscape.gif)
-
 Having seen an animation of this function years ago, I now want to share the AnimatedSettingsView implementation with you. The Views implementations uses a filled `UIBezierPath()` circle, which is animated by its radius. The view itself clips the subviews to it's bounds. The Project is updated with Size Classes, so that rotation is no problem.
+
+![AnimatedSettingsView iPhone 7 Landscape](Ressources/gif/iPhone-7-Jet-Black-landscape.gif)
+
 
 ## Project
 
