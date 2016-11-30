@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -89,7 +89,6 @@
                 <constraint firstItem="W4c-PS-iEL" firstAttribute="centerY" secondItem="Tc8-0X-yCP" secondAttribute="centerY" id="VN0-0j-1AV"/>
                 <constraint firstAttribute="trailing" secondItem="W4c-PS-iEL" secondAttribute="trailing" constant="50" id="WmR-um-hdM"/>
                 <constraint firstItem="Tc8-0X-yCP" firstAttribute="leading" secondItem="nWj-h2-Rhp" secondAttribute="leading" constant="50" id="jcb-vE-PWW"/>
-                <constraint firstItem="Jw9-eu-5hR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nWj-h2-Rhp" secondAttribute="top" constant="8" id="obE-Qm-tVB"/>
                 <constraint firstAttribute="trailing" secondItem="Jw9-eu-5hR" secondAttribute="trailing" id="ssB-2E-gta"/>
             </constraints>
             <point key="canvasLocation" x="470" y="253"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,51 +18,63 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-P4-HJE" customClass="LeftDetailSettingsSelectionView" customModule="AnimatedSettingsView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQr-MD-lDB" customClass="RightDetailSettingsSelectionView" customModule="AnimatedSettingsView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="368"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RQr-MD-lDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6mo-Zj-cKP"/>
-                            <constraint firstAttribute="trailing" secondItem="RQr-MD-lDB" secondAttribute="trailing" id="Gqn-w1-Ts4"/>
-                            <constraint firstAttribute="trailing" secondItem="DzP-P4-HJE" secondAttribute="trailing" id="Heg-ju-fAd"/>
-                            <constraint firstItem="RQr-MD-lDB" firstAttribute="top" secondItem="DzP-P4-HJE" secondAttribute="bottom" id="TxU-Ok-2ip"/>
-                            <constraint firstItem="RQr-MD-lDB" firstAttribute="height" secondItem="DzP-P4-HJE" secondAttribute="height" id="Udn-Zc-Ass"/>
-                            <constraint firstItem="DzP-P4-HJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bUx-zA-USH"/>
-                            <constraint firstItem="DzP-P4-HJE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xUK-n3-Vte"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RQr-MD-lDB" secondAttribute="bottom" id="zcD-sA-bDE"/>
+                            <constraint firstAttribute="trailing" secondItem="RQr-MD-lDB" secondAttribute="trailing" id="56x-Xb-xYj"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="672-Re-8ol"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="leading" secondItem="DzP-P4-HJE" secondAttribute="trailing" id="LSp-hJ-ued"/>
+                            <constraint firstAttribute="trailing" secondItem="DzP-P4-HJE" secondAttribute="trailing" id="MME-QA-1UY"/>
+                            <constraint firstItem="DzP-P4-HJE" firstAttribute="height" secondItem="RQr-MD-lDB" secondAttribute="height" id="McB-Sx-GgE"/>
+                            <constraint firstAttribute="bottom" secondItem="RQr-MD-lDB" secondAttribute="bottom" id="Q8k-9g-vhL"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T34-BI-FR7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DzP-P4-HJE" secondAttribute="bottom" id="ToR-c7-7X3"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="top" secondItem="DzP-P4-HJE" secondAttribute="bottom" id="pqQ-ZT-cQs"/>
+                            <constraint firstItem="DzP-P4-HJE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rgy-cI-Rss"/>
+                            <constraint firstItem="DzP-P4-HJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sQb-ww-mfx"/>
+                            <constraint firstItem="RQr-MD-lDB" firstAttribute="width" secondItem="DzP-P4-HJE" secondAttribute="width" id="yd3-DI-BCJ"/>
                         </constraints>
-                        <variation key="default">
+                        <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <exclude reference="Heg-ju-fAd"/>
-                                <exclude reference="bUx-zA-USH"/>
-                                <exclude reference="xUK-n3-Vte"/>
-                                <exclude reference="6mo-Zj-cKP"/>
-                                <exclude reference="Gqn-w1-Ts4"/>
-                                <exclude reference="TxU-Ok-2ip"/>
-                                <exclude reference="Udn-Zc-Ass"/>
-                                <exclude reference="zcD-sA-bDE"/>
+                                <exclude reference="MME-QA-1UY"/>
+                                <exclude reference="McB-Sx-GgE"/>
+                                <include reference="rgy-cI-Rss"/>
+                                <include reference="sQb-ww-mfx"/>
+                                <include reference="56x-Xb-xYj"/>
+                                <include reference="672-Re-8ol"/>
+                                <include reference="LSp-hJ-ued"/>
+                                <include reference="Q8k-9g-vhL"/>
+                                <exclude reference="T34-BI-FR7"/>
+                                <exclude reference="pqQ-ZT-cQs"/>
+                                <include reference="yd3-DI-BCJ"/>
+                                <include reference="ToR-c7-7X3"/>
                             </mask>
                         </variation>
-                        <variation key="widthClass=compact">
+                        <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="Heg-ju-fAd"/>
-                                <include reference="bUx-zA-USH"/>
-                                <include reference="xUK-n3-Vte"/>
-                                <include reference="6mo-Zj-cKP"/>
-                                <include reference="Gqn-w1-Ts4"/>
-                                <include reference="TxU-Ok-2ip"/>
-                                <include reference="Udn-Zc-Ass"/>
-                                <include reference="zcD-sA-bDE"/>
+                                <include reference="MME-QA-1UY"/>
+                                <include reference="McB-Sx-GgE"/>
+                                <include reference="rgy-cI-Rss"/>
+                                <include reference="sQb-ww-mfx"/>
+                                <include reference="56x-Xb-xYj"/>
+                                <exclude reference="672-Re-8ol"/>
+                                <exclude reference="LSp-hJ-ued"/>
+                                <include reference="Q8k-9g-vhL"/>
+                                <include reference="T34-BI-FR7"/>
+                                <include reference="pqQ-ZT-cQs"/>
+                                <exclude reference="yd3-DI-BCJ"/>
+                                <exclude reference="ToR-c7-7X3"/>
                             </mask>
                         </variation>
                     </view>
@@ -73,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+            <point key="canvasLocation" x="133.5832083958021" y="132"/>
         </scene>
     </scenes>
 </document>

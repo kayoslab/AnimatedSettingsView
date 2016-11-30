@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -90,13 +90,12 @@
                 <constraint firstAttribute="trailing" secondItem="lKg-mY-4Ue" secondAttribute="trailing" constant="50" id="LmS-23-XSu"/>
                 <constraint firstItem="jgP-m5-BQg" firstAttribute="leading" secondItem="Q9X-JN-fpr" secondAttribute="leading" id="WMB-3w-saw"/>
                 <constraint firstItem="jgP-m5-BQg" firstAttribute="centerY" secondItem="Q9X-JN-fpr" secondAttribute="centerY" constant="-40" id="aEn-bG-MLz"/>
-                <constraint firstItem="jgP-m5-BQg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q9X-JN-fpr" secondAttribute="top" constant="10" id="dGY-yo-pkk"/>
                 <constraint firstItem="u26-r9-Cfp" firstAttribute="leading" secondItem="Q9X-JN-fpr" secondAttribute="leading" constant="50" id="oqv-Vf-v4o"/>
             </constraints>
             <point key="canvasLocation" x="470" y="253"/>
         </view>
     </objects>
     <resources>
-        <image name="Backup" width="160" height="160"/>
+        <image name="Backup" width="180" height="180"/>
     </resources>
 </document>
