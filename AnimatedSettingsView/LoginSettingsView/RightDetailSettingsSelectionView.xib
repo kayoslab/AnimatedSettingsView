@@ -95,6 +95,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Cloud" width="160" height="160"/>
+        <image name="Cloud" width="24" height="24"/>
     </resources>
 </document>

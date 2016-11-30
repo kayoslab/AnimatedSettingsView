@@ -32,6 +32,7 @@ class LeftDetailSettingsSelectionView: UIView {
     @IBOutlet internal weak var settingsImageView: UIImageView!
 
     internal var color:UIColor = .clear
+    internal var invertTitleColor:Bool = false
     internal var delegate: LeftDetailSettingsSelectionDelegate?
     private var shapeLayer:CAShapeLayer?
 
@@ -107,8 +108,16 @@ class LeftDetailSettingsSelectionView: UIView {
         }
     }
 
-    func setup(withBackgroundColor color:UIColor) {
+    func setup(withBackgroundColor color:UIColor, invertTitleColor:Bool = false) {
         self.color = color
+        self.invertTitleColor = invertTitleColor
+        if invertTitleColor {
+            if self.settingsSwitch.isOn {
+                self.settingsLabel.textColor = .white
+            } else {
+                self.settingsLabel.textColor = self.color
+            }
+        }
         self.setup()
     }
 
@@ -152,6 +161,14 @@ class LeftDetailSettingsSelectionView: UIView {
     @IBAction func settingsSwitchValueChanged(sender: UISwitch) {
         if self.shapeLayer == nil {
             self.setup()
+        }
+
+        if invertTitleColor {
+            if sender.isOn {
+                self.settingsLabel.textColor = .white
+            } else {
+                self.settingsLabel.textColor = self.color
+            }
         }
 
         if sender.isOn {
